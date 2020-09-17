@@ -1,12 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
-body {
+html{
   background: url(XXX/12.jpg) no-repeat center center fixed;
   background-size: cover;
-  width: 1500px;
-  height: 500px;
+}
+#firstbc{
+  background: #B6BBD5; margin: 0px;padding: 0px; border: #33536C solid 3px; border-radius: 7px 7px 0px 0px; padding-bottom: 10px;
+  
+
+}
+body {
+  
+  min-width: 600px;
   background-repeat: repeat;
   margin-left: 200px;
+  margin-right: 200px;
   font-family: 'Open Sans', sans-serif;}
   caption{border: solid black 1px}
   table td{
@@ -21,23 +29,26 @@ table{margin-left: 250px;tab-size: 500px; }
   
 #Сод{
     margin-left: 30px; border: 1px solid black;
-    width: 600px;padding-left: 10px; background-color: #1AC6FF;
+    width: 500px; background-color: #598ABE; border-radius: 0px 50px 0px 50px; box-shadow: #2A3A52 3px 15px 18px 1.1px;;
   
 }
-#Сод2{font-size: 50px;
+#Сод2{font-size: 50px; text-align: center;margin-block-start: 0px;margin-inline-start: 0px;
 
+}
+blockquote{
+  margin-left: 100px;margin-right: 150px;
 }
 .divh {
   border-style: solid;
-  border-color: #004d79;
-  background: #7bdcfe;
+  border-color: #2A3A52;
+  background: #82AFDD;
   opacity: 0.8;
   border-radius: 10px;
 }
 h1 {
   text-decoration: underline; 
   font-size: 100px;
-  margin: 40px;
+  margin: 0px;
 }
 h2 {
   margin-left: 70px; margin-bottom: 1px; font-size: 60px;
@@ -53,9 +64,9 @@ h3 {
 }
 p {
     text-align: justify;
-    margin-right: 400px;
     margin-left: 50px;
     font-size: 20px;
+    margin-right: 50px;
   }
 .PP {
   text-align: justify;
@@ -74,8 +85,7 @@ figure {
   float: right;
 }
 .img {
-  width: 300px;
-  height: 250px;
+  margin-left: 10px;
   border: 1px solid black;
   text-align: right;
   float: right;
@@ -83,4 +93,7 @@ figure {
 
 .X {
   font-size: 20px;
+}
+#list {
+  margin-right: 200px;
 }
