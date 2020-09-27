@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400;700&display=swap");
-body {
+html,body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   font-size: 16px;
+height: 100%;
+min-width: 600px;
 }
+
 * {
   box-sizing: border-box;
 }
-.all {
-  margin-top: 70px;
+.page{
+  min-height: 100%;
+position: relative;
 }
 /* head */
-
+.r{float: right; width: 9.9%; height: 80px;}
+.l{float: left; width: 9.8%; height: 80px;}
 .header {
   position: fixed;
   top: 0;
@@ -64,6 +69,9 @@ body {
 }
 
 /* nav */
+.nav-all{
+  display: flex;
+}
 .nav {
   font-size: 14px;
   text-transform: uppercase;
@@ -72,8 +80,6 @@ body {
   padding: 0 15px;
   display: flex;
   align-items: center;
-
-  margin-right: 200px;
 }
 .nav__link {
   display: inline-block;
@@ -125,30 +131,87 @@ body {
   height: 705.4px;
 
   display: flex;
-  margin-top: 90px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   object-fit: cover;
 }
 .body {
-  display: grid;
-  grid-template-areas:
-    "a a b"
-    "d f m";
+  display: flex;
   margin-top: 10px;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
 }
 .body-back {
-  justify-self: center;
-  text-align: center;
   display: flex;
   align-items: center;
-  padding: 60px;
+  align-content: center;
+  justify-content: center;
+  padding: 0 200px;
+  width:  calc(55.3vw - 7px);
+  max-height: 700px;
+  min-height: 560px;
   background-color: #f7ebed;
   margin-right: 10px;
+  height: calc(100vh - 50px);
 }
+.body-text{
+  max-width: 700px;
+  max-height: 300px;
+  min-width: 350px;
+  min-height: 250px;
+  text-align: left;
+ 
+}
+.img-b{   
+  width: calc(25vw - 22px);
+  height: calc(100vh - 50px);
+  max-height: 700px ;
+  min-height: 560px;
+  }
+h2{text-transform: uppercase;}
+.span1{ text-transform: uppercase; color: #D3B3B8;}
+.content {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.body-medium{
+display: flex; justify-content: center; margin-top: 10px; margin-bottom:15px ;
+}
+.body-medium-img1{ /*445px;600px;460px;*/
+  width: calc(30vw - 65px);
+   min-height: 650px;
+   max-height: 800px;
+   max-width: 1900px;
+   height: 700px}
+.body-medium-img2{
+  background-image: url(/Свадьба/img/center.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: calc(30vw - 40px);
+  min-height: 650px;
+  max-height:800px;
+  display: flex;
+  justify-content: center;  
+  align-items: flex-end;
+  margin: 0 10px;
+  max-width: 2000px;
+  height: 700px}
+.body-medium-img3{
+  width: calc(30vw - 118px);
+  min-height: 700px;
+  max-height: 800px;
+  max-width: 1900px;
+  height: 700px
+}
+.about_link{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
 /* foot */
 .pfoot {
   font-size: 20px;
@@ -194,6 +257,7 @@ body {
   margin: 20px 0 20px 0;
   text-align: center;
   display: inline-block;
+  background-color: #fff;
   vertical-align: top;
   padding: 10px 15px;
   text-decoration: none;
@@ -212,13 +276,11 @@ body {
 }
 /*end*/
 .end {
-  position: fixed;
+  position: absolute; 
   bottom: 0;
   left: 0;
-  height: auto;
   width: 100%;
   height: 60px;
-  position: relative;
   background-color: #292325;
   display: flex;
   flex-direction: column;
@@ -229,3 +291,4 @@ body {
   text-align: center;
   font-size: 12px;
 }
+.endspan{color: #d5b6ba; text-decoration: none; opacity: 0.3; display: block; float: inline-end;} 
