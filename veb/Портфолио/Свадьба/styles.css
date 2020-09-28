@@ -165,7 +165,7 @@ position: relative;
  
 }
 .img-b{   
-  background-image: url(/Свадьба/img/ea9a6d3f1b548cddcfec314301bcc5ff.jpg);
+  background-image: url(./img/ea9a6d3f1b548cddcfec314301bcc5ff.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -185,7 +185,7 @@ h2{text-transform: uppercase;}
 display: flex; justify-content: center; margin-top: 10px; margin-bottom:15px ;
 }
 .body-medium-img1{ /*445px;600px;460px;*/
-  background-image: url(/Свадьба/img/left.jpg);
+  background-image: url(./img/left.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -196,7 +196,7 @@ display: flex; justify-content: center; margin-top: 10px; margin-bottom:15px ;
   min-width: 230px;
   height: 700px;}
 .body-medium-img2{
-  background-image: url(/Свадьба/img/center.jpg);
+  background-image: url(./img/center.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -211,7 +211,7 @@ display: flex; justify-content: center; margin-top: 10px; margin-bottom:15px ;
   min-width: 266px;
   height: 700px}
 .body-medium-img3{
-  background-image: url(/Свадьба/img/right.jpg);
+  background-image: url(./img/right.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
