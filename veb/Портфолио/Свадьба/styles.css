@@ -1,294 +1,120 @@
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@400;700&display=swap");
-html,body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  font-size: 16px;
-height: 100%;
-min-width: 600px;
-}
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Test_main</title>
+  <script
+    src="https://kit.fontawesome.com/306770a3ca.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<html>
+  <body>
+    <div class="page">
 
-* {
-  box-sizing: border-box;
-}
-.page{
-  min-height: 100%;
-position: relative;
-}
-/* head */
-.r{float: right; width: 9.9%; height: 80px;}
-.l{float: left; width: 9.8%; height: 80px;}
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: auto;
-  width: 100%;
-  min-height: 70px;
-  z-index: 1000;
-  background-color: black;
-}
-.headerbc {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  text-decoration: none;
-}
-.headerlogo {
-  font-family: "Monoton", cursive;
-  background-color: #d3b3b8;
-  cursor: pointer;
-  width: 100px;
-  height: 70px;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 30px;
-  transition: 1s;
-}
-.linklog {
-  text-decoration: none;
-}
-.headerlogo:hover {
-  background-color: black;
-}
-.container {
-  width: 100%;
-  height: 30%;
-  margin: 0, auto;
+      <header class="header">
+        <div class="r"></div>
+        <div class="l"></div>
+        <div class="container">
+          <div class="headerbc">
+            <a href="/Свадьба/index.html" class="linklog">
+              <div class="near">
+                <div class="headerlogo">
+                  <p>OFM</p>
+                </div>
+                <p>Organization of weddings<br />Made by Mikhail</p>
+              </div>
+            </a>
+            <div class="nav-all">
+              <nav class="nav">
+                <a class="nav__link" href="/Свадьба/index.html">home</a>
+                <a class="nav__link" href="/Свадьба/about/about.html">about</a>
+                <a class="nav__link" href="/Свадьба/contact/contact.html">contacts</a>
+              </nav>
+              <div class="icon-nav">
+                <a
+                class="icon"
+                href="https://www.instagram.com/org_weddings_test/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                  class="icon"
+                  href="https://vk.com/tushev.mikhail"
+                  target="_blank"
+                  ><i class="fab fa-vk"></i
+                    ></a>
+                    <a class="icon" href="https://t.me/Mikhail_tushev" target="_blank"
+                    ><i class="fab fa-telegram-plane"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="content">
+              <div class="intopage">
+                <img src="./img/5.2.jpg" />
+              </div>
+              <div class="body">
+                <div class="body-back">
+                  <div class="body-text">
+                    <div class="text">
+                      <h2>
+                        Our team will <span class="span1">organize</span> your wedding
+                        with all our heart
+                      </h2>
+                      <p class="body-textp">
+                        I am glad to welcome You to my Agency's website! I will take
+                        care of all the organization and conduct of your celebration,
+                        leaving you only pleasant chores.In the "about" tab, you can see
+                        our team for organizing your celebration. With great pleasure, I
+                        will listen to your fantasies and take into account all your
+                        wishes. We will answer all your questions. to find our contacts,
+                        open the "contacts" tab or write to us in the social network by
+                        clicking on the icons in the upper right corner..
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="img-b ">
+                  
+                </div>
+              </div>
+              <div class = "body-medium">
+                <div class="body-medium-img1"></div>
+                <div class="body-medium-img2"><a class="botton" href="/Свадьба/about/about.html">our team</a></div>
+                <div class="body-medium-img3"></div>
+              </div>
 
-  background-color: #fff;
-}
-.near {
-  color: black;
-  text-align: initial;
-  display: flex;
-  align-items: center;
-  cursor: default;
-}
-
-/* nav */
-.nav-all{
-  display: flex;
-}
-.nav {
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #bbbbbb;
-  text-align: center;
-  padding: 0 15px;
-  display: flex;
-  align-items: center;
-}
-.nav__link {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 15px;
-  position: relative;
-  color: #000;
-  text-decoration: none;
-  transition: color 0.3s linear;
-}
-.nav__link:hover {
-  color: #d5b6ba;
-}
-.nav__link::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #d5b6ba;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-  transition: opacity 1s linear;
-}
-.nav__link:hover:after {
-  opacity: 1;
-}
-
-/* icon nav */
-.icon {
-  color: #000;
-  font-size: 20px;
-  transition: color 0.1s linear;
-  margin: 0 5px;
-}
-.icon:hover {
-  color: #d5b6ba;
-}
-.icon-nav {
-  margin-top: 10px;
-  z-index: 1000;
-}
-/* body */
-
-.intopage > img {
-  width: 80%;
-  height: 705.4px;
-
-  display: flex;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover;
-}
-.body {
-  display: flex;
-  margin-top: 10px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.body-back {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  padding: 0 200px;
-  width:  calc(55.3vw - 7px);
-  max-height: 700px;
-  min-height: 560px;
-  background-color: #f7ebed;
-  margin-right: 10px;
-  height: calc(100vh - 50px);
-}
-.body-text{
-  max-width: 700px;
-  max-height: 300px;
-  min-width: 350px;
-  min-height: 250px;
-  text-align: left;
- 
-}
-.img-b{   
-  width: calc(25vw - 22px);
-  height: calc(100vh - 50px);
-  max-height: 700px ;
-  min-height: 560px;
-  }
-h2{text-transform: uppercase;}
-.span1{ text-transform: uppercase; color: #D3B3B8;}
-.content {
-  padding-top: 70px;
-  padding-bottom: 50px;
-}
-.body-medium{
-display: flex; justify-content: center; margin-top: 10px; margin-bottom:15px ;
-}
-.body-medium-img1{ /*445px;600px;460px;*/
-  width: calc(30vw - 65px);
-   min-height: 650px;
-   max-height: 800px;
-   max-width: 1900px;
-   height: 700px}
-.body-medium-img2{
-  background-image: url(/Свадьба/img/center.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: calc(30vw - 40px);
-  min-height: 650px;
-  max-height:800px;
-  display: flex;
-  justify-content: center;  
-  align-items: flex-end;
-  margin: 0 10px;
-  max-width: 2000px;
-  height: 700px}
-.body-medium-img3{
-  width: calc(30vw - 118px);
-  min-height: 700px;
-  max-height: 800px;
-  max-width: 1900px;
-  height: 700px
-}
-.about_link{
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-
-/* foot */
-.pfoot {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 0;
-  text-transform: uppercase;
-}
-.foot_img {
-  display: grid;
-  grid-template-areas:
-    "a b c"
-    "d f m";
-
-  justify-content: center;
-}
-
-.pic {
-  width: 250px;
-  height: 216px;
-}
-.pic:nth-child(-n + 3) {
-  margin-top: 20px;
-}
-.pic:nth-child(3n) {
-  margin-right: 0px;
-}
-.pic:nth-child(2) {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-.pic:nth-child(5) {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-.pic:nth-child(+n + 4) {
-  margin-top: 3px;
-}
-/* botton*/
-.foot {
-  text-align: center;
-}
-.botton {
-  margin: 20px 0 20px 0;
-  text-align: center;
-  display: inline-block;
-  background-color: #fff;
-  vertical-align: top;
-  padding: 10px 15px;
-  text-decoration: none;
-  cursor: pointer;
-  color: #000;
-  object-position: center;
-  border: 2px solid #000;
-  text-transform: uppercase;
-
-  transition: color 0.3s linear;
-  transition: background-color 0.3s linear;
-}
-.botton:hover {
-  background-color: black;
-  color: #fff;
-}
-/*end*/
-.end {
-  position: absolute; 
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
-  background-color: #292325;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.endpage {
-  color: #fff;
-  text-align: center;
-  font-size: 12px;
-}
-.endspan{color: #d5b6ba; text-decoration: none; opacity: 0.3; display: block; float: inline-end;} 
+              <div class="foot">
+                <p class="pfoot">Our instagram</p>
+                <div class="foot_img">
+                  <div class="img_black">
+            <img
+            class="pic"
+            src="./img/arco-de-flores-no-casamento.jpg"
+              alt=""
+              />
+            </div>
+            <img class="pic" src="./img/05.jpg" alt="" />
+            <img class="pic" src="./img/4.jpg" alt="" />
+            <img class="pic" src="./img/1.jpg" alt="" />
+            <img class="pic" src="./img/2.jpg" alt="" />
+            <img class="pic" src="./img/3.jpg" alt="" />
+          </div>
+        <a
+        class="botton"
+        href="https://www.instagram.com/org_weddings_test/"
+        target="_blank"
+        >Show more</a
+        >
+      </div>
+      <div class="end">
+        <div class="endpage">&copyMade by Mikhail Tushev for test task <a  class="endspan" href="#"> <span>my portfolio</span></a></div>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+  
