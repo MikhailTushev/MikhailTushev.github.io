@@ -72,7 +72,7 @@ body {
 
 .columns__row {
     display: flex;
-    margin: 0px -8px;
+    margin: 0px 10%;
 }
 
 .columns__column {
